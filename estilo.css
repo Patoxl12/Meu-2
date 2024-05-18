@@ -1,8 +1,13 @@
 body{
     margin: 20px;  /*Para deixar a pagina com margens*/
 }
-.container {
-    display: grid; 
+
+section{
+    grid-column-start: 6;
+    grid-column-end: 12;
+    font-size: large;
+    font-family: sans-serif;
+    margin: 25px;
 }
 
 header{
@@ -11,6 +16,7 @@ header{
     grid-column-end: 12;
     text-align: center;
 }
+
 nav{
     border-radius: 12px;
     background-color: rgb(0, 0, 0);
@@ -19,13 +25,24 @@ nav{
     text-align: center;
     color: rgb(255, 255, 255);
 }
+aside{
+    font-family: sans-serif;
+}
+
+form{
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid; 
+}
 
 .principal{
     grid-column-start: 6;
     grid-column-end: 12;
-    text-align: center;
-    margin: 20px;
+    text-align: left;
 }
+
 .menu{
     grid-column-start: 6;
     grid-column-end: 12;
@@ -33,38 +50,61 @@ nav{
     gap: 20px;
     
 }
+
+.infos{
+    font-family: sans-serif;
+}
+
+.formacao{
+    margin: 40px;
+}
+
 ul{
     list-style-type: none;
     color:white;
 }
+
 a:link{
     text-decoration: none;
     padding: 15px 20px;
     color: rgb(255, 255, 255);
     font-size: large;
+    font-family: sans-serif;
+    border-radius: 12px;
 }
+
 h2{
     float: left;
 }
+
 a:hover{
-    background-color: rgb(128, 123, 123);
-    color: rgb(255, 255, 255);
+    color: rgb(190, 177, 177);
 }
+
 .imagem_eu{
     grid-column-start: 6;
     grid-column-end: 12;
-
 }
+
 .img{
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     border: solid black 2px;
 }
+
 .r_imagem{
     height: 200px;
     width: 200px; 
 }
+footer{
+    border-radius: 12px;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    text-align: center;
+    background-color: gray;
+}
+
  /* media query para dispositivos móveis */
  @media only screen and (max-width: 767px) {
     .wrapper {
