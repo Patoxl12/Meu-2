@@ -42,7 +42,11 @@ form{
     grid-column-end: 12;
     text-align: left;
 }
+.divisao{
+    display: flex;
+    flex-flow: row wrap;
 
+}
 .menu{
     grid-column-start: 6;
     grid-column-end: 12;
@@ -67,7 +71,7 @@ ul{
 a:link{
     text-decoration: none;
     padding: 15px 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 4, 255);
     font-size: large;
     font-family: sans-serif;
     border-radius: 12px;
@@ -97,6 +101,18 @@ a:hover{
     height: 200px;
     width: 200px; 
 }
+.imgport{
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    margin: 10px;
+}
+.imgport img {
+    width: 125px;
+    height: 115px;
+}
+
 footer{
     border-radius: 12px;
     grid-column-start: 6;
